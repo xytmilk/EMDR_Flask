@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Up Load the Video</title>
+    </head>
+    <body>
+        <h1>Where can we up load</h1>
+        <form action="/videoUpLoad" method="POST" enctype="multipart/form-data">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </body>
+</html>
